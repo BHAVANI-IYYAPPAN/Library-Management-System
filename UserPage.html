@@ -1,0 +1,78 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous"> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script> 
+<style> 
+#book { 
+font-family: Arial, Helvetica, sans-serif; 
+border-collapse: collapse; 
+width: 100%; 
+} 
+#book, td, #book th { 
+border: 1px solid #ddd; 
+padding: 8px; 
+}
+#book tr:nth-child(even){background-color: #f2f2f2;} 
+#book tr:hover {background-color: #ddd;} 
+#book th { 
+padding-top: 12px; 
+padding-bottom: 12px; 
+text-align: left; 
+background-color: #04AA6D; 
+color: white; 
+} 
+#searchbook { 
+font-family: Arial, Helvetica, sans-serif; 
+border-collapse: collapse; 
+width: 80%; 
+} 
+#searchbook, td, #searchbook th { 
+border: 1px solid #ddd; 
+padding: 8px; 
+} 
+#searchbook tr:nth-child(even){background-color: #f2f2f2;} 
+#searchbook tr:hover {background-color: #ddd;} 
+#searchbook th { 
+padding-top: 12px; 
+padding-bottom: 12px; 
+text-align: left; 
+background-color: #04AA6D; 
+color: white; 
+} 
+</style> 
+</head> 
+<body> 
+<nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top"> 
+<a class="navbar-brand" href="">Book Store</a> 
+<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb" aria-expanded="true"> 
+<span class="navbar-toggler-icon"></span> 
+</button> 
+<div id="navb" class="navbar-collapse collapse hide">
+<ul class="navbar-nav"> 
+<li class="nav-item active"> 
+<a class="nav-link" href="" >Home</a> 
+</li> 
+<li class="nav-item"> 
+<a class="nav-link" href="" >Books</a> 
+</li> 
+<div class="input-group" style="margin-left:170px;"> 
+<form method="POST"> 
+<input type="text" size="50%" placeholder="Search.." name="searchbook" style="padding:5px 12px;"> 
+<input type="submit" value="search" name="search"> 
+</form> 
+</div> 
+</ul> 
+<ul class="nav navbar-nav ml-auto"> 
+<li class="nav-item"> 
+<a class="nav-link" href="homepage.php"><span class="fas fa-user"></span> Logout</a> 
+</li> 
+</ul> 
+</div> 
+</nav> 
+</body> 
+</html>
+
